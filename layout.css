@@ -17,15 +17,15 @@ html[dir="rtl"] .float-layout > *{ float:right; }
 
 .right{ float:right; }
 html[dir="rtl"] .right{ float:left; }
+.left{ float:left; }
+html[dir="rtl"] .left{ float:right; }
 
-.float-layout > * > *{
+.cushion{
 	/*set cushion size here*/
+	/*margin:10px;*/
 }
 
-html[dir="rtl"] .float-layout > *{
-	float:right;
-}
-
+.full{ width:100%; }
 .half{ width:50%; }
 .third{ width:33.33333333%; }
 .two-thirds{ width:66.66666666%; }
@@ -38,8 +38,20 @@ html[dir="rtl"] .float-layout > *{
 .sixth{ width:16.66666666%; }
 .five-sixths{ width:83.33333333%; }
 
+.clear{ clear:both; }
+.spacer{ height:2em; }
+.hidden{ display:none; }
+
 .table-layout{ display:table; width:100%; }
 .table-layout > *{ display:table-row; }
 .table-layout > * > *{ display:table-cell; }
 
 .flex-layout{ display:-webkit-flex; display:-ms-flexbox; display:flex; }
+
+.transform-center{
+	position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+}
