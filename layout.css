@@ -37,7 +37,7 @@ html[dir="rtl"] .left { float:right; }
 .sixth { width:16.66666666%; }
 .five-sixths { width:83.33333333%; }
 
-.clear { clear:both; }
+.clear { clear:both; float:none; }
 .spacer { height:2em; }
 .hidden { display:none; }
 
