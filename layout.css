@@ -5,7 +5,7 @@ html,body {
 html[dir="rtl"] body { direction:rtl; }
 
 .page-width {
-	width:960px;
+	max-width:960px;
 	margin:0 auto;
 }
 
