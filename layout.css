@@ -39,6 +39,7 @@ html[dir="rtl"] .left { float:right; }
 	.five-sixths { width:83.33333333%; }
 }
 
+html[dir="rtl"] .clear,
 .clear { clear:both; float:none; }
 .spacer { height:2em; }
 .hidden { display:none; }
