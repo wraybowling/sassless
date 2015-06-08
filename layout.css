@@ -47,7 +47,20 @@ html[dir="rtl"] .left { float:right; }
 .table-layout > * { display:table-row; }
 .table-layout > * > * { display:table-cell; }
 
-.flex-layout { display:-webkit-flex; display:-ms-flexbox; display:flex; }
+.flex-layout {
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-flex-flow:row wrap;
+	-ms-flex-flow:row wrap;
+	flex-flow:row wrap;
+}
+.flex-layout > * {
+    -ms-flex:auto;
+    -webkit-flex:auto;
+    flex:auto;
+    width:20em;
+}
 
 .transform-center {
 	position:absolute;
